@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EnvolveSeguro - Embalagens Seguras</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  
+    header {
+      background-color: #2e2e2e;
+      color: #fff;
+      padding: 20px;
+    }
+  
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+  
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+  
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    section {
+      flex: 1;
+      padding: 20px;
+    }
+  
+    h2 {
+      color: #333;
+      font-size: 20px;
+    }
+  
+    .small-image {
+      max-width: 30%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+      float: right;
+      margin-left: 20px;
+    }
+  
+    p {
+      line-height: 1.5;
+    }
+  
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      margin-top: auto;
+    }
+	
+	* {box-sizing:border-box}
+
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 400px; /* Altere o valor conforme desejado */
+	  float: right;
+	  margin-left: 20px; /* Adicione uma margem à esquerda para separá-lo do conteúdo */
+	  position: relative;
+	}
+
+	.mySlides {
+	  display: none;
+	}
+
+	/* Next & previous buttons */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  margin-top: -22px;
+	  padding: 16px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+
+	.fade {
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+	  from {opacity: .4}
+	  to {opacity: 1}
+	}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EnvolveSeguro - Embalagens Seguras</h1>
+    <nav>
+      <ul>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Quem somos?</h2>
+    <!-- Slideshow container -->
+	<div class="slideshow-container">
+
+	  <!-- Full-width images with number and caption text -->
+	  <div class="mySlides fade">
+		<div class="numbertext">1 / 2</div>
+		<img src="imagens/1.jpeg" style="width:100%">
+		<div class="text"></div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">2 / 2</div>
+		<img src="imagens/2.jpeg" style="width:100%">
+		<div class="text">estrutura interna</div>
+	  </div>
+
+	  <!-- Next and previous buttons -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  <!-- Botão para o vídeo de teste -->
+<a href="https://www.youtube.com/shorts/1DUXI9pYZBk" target="_blank" class="video-button">Assista ao video</a>
+
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span>
+	  <span class="dot" onclick="currentSlide(2)"></span>
+	  
+	</div>
+
+	<!-- Product description -->
+	<div class="product-description">
+	  <h2>EnvolveSeguro - Embalagens Seguras</h2>
+	  <p>Apresentamos a EnvolveSeguro, a solução perfeita para o transporte de mercadorias resistentes. Nossa embalagem oferece segurança e proteção superior, garantindo que seus itens delicados cheguem ao destino final intactos. Com um design inovador e materiais de alta qualidade, a EnvolveSeguro oferece resistência e proteção contra vibração, reduzindo significativamente o risco de danos durante o transporte. Tenha tranquilidade ao enviar produtos sensíveis, como vidros, cerâmicas e eletrônicos, sabendo que eles estão protegidos pela EnvolveSeguro. Não arrisque mais danos e prejuízos. Escolha a embalagem confiável e segura para suas mercadorias resistentes - escolha EnvolveSeguro.</p>
+	  <p>Entre em contato conosco agora mesmo para adquirir as melhores embalagens para transporte. Garanta a proteção dos seus produtos e a satisfação dos seus clientes. A EnvolveSeguro está pronta para atender às suas necessidades e oferecer soluções personalizadas. Invista na segurança do seu negócio!</p>
+	  <p><strong>Entre em contato:</strong></p>
+	  <p>Telefone: (47) 98885-3561</p>
+	  <p>Email: contato@envolveseguro.com</p>
+	</div>
+  </section>
+
+  <footer>
+    <p>&copy; EnvolveSeguro - Todos os direitos reservados.</p>
+  </footer>
+</body>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</html>
